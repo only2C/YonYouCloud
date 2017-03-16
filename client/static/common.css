@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, "Microsoft Yahei", sans-serif;
+  background: #f5f5f5;
+  font-size: 14px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.blue {
+  color: #00b5f4;
+}
+/*布局*/
+.portal-nav {
+  background: #40c8f7 ;
+  overflow: hidden;
+}
+.portal-nav .portal-nav-logo {
+  float: left ;
+}
+.portal-nav .portal-nav-setting {
+  float: right;
+}
+.portal-content {
+  height: auto ;
+  min-height: 90%;
+  overflow: hidden;
+}
+/**齿轮样式**/
+.pub-btn-setting {
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin: 8px 10px 0 0;
+  background: url("../image/public/settingBtn.png");
+}
+.pub-btn-setting:hover {
+  background: url("../image/public/settingBtnHover.png");
+}
+.pub-btn-search {
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin: 10px 10px 0 0;
+  background: url("../image/public/searchSmallBtn.png");
+}
+.pub-btn-search:hover {
+  background: url("../image/public/searchSmallBtnHover.png");
+}
+/*更多**/
+.pub-btn-more {
+  width: 7px;
+  height: 12px;
+  background: url("../image/public/more.png");
+  float: right;
+  margin: 15px 15px 0 0;
+}
+.pub-btn-more:hover {
+  background: url("../image/public/moreHover.png");
+}
+/**grid table style*/
+.portal-table-search {
+  margin: -15px 10px 10px;
+}
+.portal-table-search li {
+  overflow: hidden;
+  height: 40px;
+  line-height: 30px;
+}
+.portal-table-search #billtype-tab {
+  line-height: 30px;
+  text-align: left;
+  width: 98%;
+  padding-left: 90px;
+  margin-left: -4px;
+  margin-bottom: 10px;
+}
+.portal-table-search .portal-table-search-span {
+  float: left;
+  margin: 0 15px;
+}
+.portal-table-search .active {
+  background: #00b5f4;
+  color: #fff;
+  border-radius: 4px;
+}
+.portal-table-search .portal-table-search-statu {
+  padding: 7px 18px;
+}
+.portal-table-search .portal-table-search-statu:hover {
+  cursor: pointer;
+}
+.portal-table-search .portal-table-search-btn {
+  background: #d6f0f9;
+  color: #337ab7;
+  padding: 0px 15px;
+  border-radius: 5px;
+  margin-left: 11px;
+  display: inline-block;
+}
+.portal-table-search .portal-table-search-btn:hover {
+  color: #fff;
+  cursor: pointer;
+  background: #00b5f4;
+}
+.portal-table-search .portal-table-search-btn:hover i {
+  background: url("../image/public/searchSmallBtn.png");
+}
+.portal-table-search .portal-table-search-btn i {
+  width: 24px;
+  height: 24px;
+  background: url("../image/public/searchSmallBtnHover.png");
+  float: left;
+  margin: 4px 4px 0 0;
+}
+.portal-table-search input {
+  height: 30px;
+  width: 200px;
+  font-size: 12px;
+}
+.portal-table-header {
+  background: #fff;
+  margin-top: 15px;
+  overflow: hidden;
+  padding-top: 15px;
+  min-height: 500px;
+}
+.portal-table-header .prop-table-span {
+  padding: 8px 20px;
+  line-height: 30px;
+  background: #d6f0f9;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.portal-table-header .prop-table-span a {
+  text-decoration: none;
+}
+.portal-table-header .prop-table-span.active {
+  background: #00b5f4;
+}
+.portal-table-header .prop-table-span.active a {
+  color: #fff;
+}
+.container-table {
+  background: #fff;
+  overflow: hidden;
+}
+.grid-table {
+  font-size: 14px;
+  color: #464646;
+  border: 1px solid #f9f9fa;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+.grid-table th {
+  height: 40px;
+  text-align: center;
+  background-color: #f2fbfe;
+}
+.grid-table th .grid-table-title {
+  display: block;
+  padding: 0 5px;
+  border-left: 1px solid #ccc;
+  height: 14px;
+  line-height: 14px;
+}
+.grid-table th:first-child .grid-table-title {
+  border-left: 0;
+}
+.grid-table tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+.grid-table tr:nth-child(even) {
+  background: #fafafa;
+}
+.grid-table tr:hover td {
+  background: #fff8ee;
+}
+.grid-table tr .total {
+  text-align: right;
+}
+.grid-table tr .datestyle {
+  text-align: center;
+}
+.grid-table td {
+  padding: 10px 5px;
+  background-color: #ffffff;
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.delete-icon {
+  background: url('../image/public/icons.png') no-repeat;
+  width: 24px;
+  height: 24px;
+  float: right;
+  position: absolute;
+  background-position: 0 0;
+  margin: 5px 0 0 7px;
+}
+.add-icon-15 {
+  background: url("../image/public/addBtn15.png") no-repeat;
+  float: left;
+}
+.add-icon-15 span {
+  margin-left: 20px;
+}
+.del-icon-15 {
+  background: url("../image/public/delBtn15.png") no-repeat;
+  float: left;
+}
+.del-icon-15 span {
+  margin-left: 20px;
+}

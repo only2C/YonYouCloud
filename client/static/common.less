@@ -1,0 +1,266 @@
+.smallFont(){
+  font-size: 12px;
+}
+.middleFont(){
+  font-size:14px;
+}
+.bigFont(){
+  font-size: 16px;
+}
+.fontColor-blue(){
+  color: #00b5f4;
+}
+
+body {
+  font-family:Arial,"Microsoft Yahei",sans-serif;
+  background: #f5f5f5;
+  .middleFont ;
+}
+*{margin:0;padding:0}
+ul li{
+  list-style: none;
+}
+a:hover{
+  cursor: pointer;
+  text-decoration:none;
+}
+.fl(){
+  float: left;
+}
+.fr(){
+  float: right;
+}
+.blue{
+  color:#00b5f4;
+}
+.icon-style(){
+  width: 24px;
+  height:24px;
+  .fr;
+}
+.icon-img(){
+  background: url('../image/public/icons.png') no-repeat;
+}
+
+/*布局*/
+.portal-nav{
+  background:#40c8f7 ;
+  overflow: hidden;
+  .portal-nav-logo{
+    float:left ;
+  }
+  .portal-nav-setting{
+    float: right;
+  }
+}
+
+.portal-content{
+  height: auto ;
+  min-height: 90%;
+  overflow: hidden;
+}
+
+
+/**齿轮样式**/
+.pub-btn-setting{
+  .icon-style;
+  margin: 8px 10px 0 0;
+  background: url("../image/public/settingBtn.png");
+  &:hover{
+    background: url("../image/public/settingBtnHover.png");
+  }
+}
+
+.pub-btn-search{
+  .icon-style;
+  margin: 10px 10px 0 0;
+  background: url("../image/public/searchSmallBtn.png");
+  &:hover{
+    background: url("../image/public/searchSmallBtnHover.png");
+  }
+}
+
+/*更多**/
+.pub-btn-more{
+  width:7px;
+  height:12px;
+  background:url("../image/public/more.png");
+  .fr();
+  margin: 15px 15px 0 0;
+  &:hover{
+    background:url("../image/public/moreHover.png");
+  }
+}
+
+
+
+/**grid table style*/
+.portal-table-search{
+  margin: -15px 10px 10px;
+  li{
+    overflow: hidden;
+    height: 40px;
+    line-height: 30px;
+  }
+  #billtype-tab {
+    line-height: 30px;
+    text-align: left;
+    width: 98%;
+    padding-left: 90px;
+    margin-left: -4px;
+    margin-bottom: 10px;
+  }
+  .portal-table-search-span{
+    float: left;
+    margin: 0 15px;
+  }
+  .active{
+    background: #00b5f4;
+    color: #fff;
+    border-radius: 4px;
+  }
+  .portal-table-search-statu{
+    padding: 7px 18px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .portal-table-search-btn{
+    background: #d6f0f9;
+    color: #337ab7;
+    padding: 0px 15px;
+    border-radius: 5px;
+    margin-left: 11px;
+    display: inline-block;
+
+    &:hover{
+      color: #fff;
+      cursor: pointer;
+      background: #00b5f4;
+      i{
+        background: url("../image/public/searchSmallBtn.png");
+      }
+    }
+    i{
+      width:24px;
+      height:24px;
+      background: url("../image/public/searchSmallBtnHover.png");
+      .fl();
+      margin: 4px 4px 0 0;
+    }
+  }
+  input{
+    height: 30px;
+    width:200px;
+    .smallFont;
+  }
+
+}
+
+.portal-table-header {
+  background: #fff;
+  margin-top: 15px;
+  overflow: hidden;
+  padding-top: 15px;
+  min-height: 500px;
+
+  .prop-table-span{
+    padding: 8px 20px;
+    line-height: 30px;
+    background: #d6f0f9;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    a{
+      text-decoration: none;
+    }
+  }
+  .prop-table-span.active{
+    background: #00b5f4;
+    a{
+      color: #fff;
+    }
+  }
+
+}
+
+.container-table{
+  background: #fff;
+  overflow: hidden;
+}
+
+.grid-table{
+  font-size:14px;
+  color:#464646;
+  border:1px solid #f9f9fa;
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  th{
+    height: 40px;
+    text-align: center;
+    background-color: #f2fbfe;
+    .grid-table-title{
+      display:block;
+      padding: 0 5px;
+      border-left:1px solid #ccc;
+      height: 14px;
+      line-height: 14px;
+    }
+    &:first-child{
+      .grid-table-title{
+         border-left:0;
+      }
+    }
+  }
+  tr{
+    border-bottom:1px solid #e5e5e5;
+    &:nth-child(even){
+      background:#fafafa;
+    }
+    &:hover td{
+      background:#fff8ee;
+    }
+    .total{
+      text-align:right;
+    }
+    .datestyle{
+      text-align:center;
+    }
+  }
+  td{
+    padding:10px 5px;
+    background-color: #ffffff;
+    text-align: left;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+}
+
+
+.delete-icon{
+  .icon-img;
+  .icon-style;
+  position: absolute;
+  background-position:0 0;
+  margin: 5px 0 0 7px;
+}
+.add-icon-15{
+  background:url("../image/public/addBtn15.png") no-repeat;
+  .fl();
+  span{
+    margin-left: 20px;
+  }
+}
+.del-icon-15{
+  background:url("../image/public/delBtn15.png") no-repeat;
+  .fl();
+  span{
+    margin-left: 20px;
+    // color:#00b5f4;
+  }
+
+}
